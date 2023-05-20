@@ -1,16 +1,32 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-8 offset-2">
-            <div class="card-panel teal lighten-2">
-                <h4 class="center text-white">Image Library</h4>
+        <div class="col-8 offset-2">
+            <div class="card text-white" style="background-color:#198754;">
+                <h4 class="text-center">Image Library</h4>
             </div>
-            <form #imageForm = ngForm>
-                <div class="row">
-                    <div class="input-field col-sm-12">
-
+            <div class="d-flex justify-content-center p-3">
+                <form #imageForm= "ngForm">
+                    <div class="row">
+                        <div class="form-group col-12 pb-5">
+                            <input class="form-control" type="text" #Caption  ngModel name="Caption" id="Caption"/>
+                            <label class="from-lable" for="Caption">Caption</label>                    
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control" type="file" #image accept="image/" />
+                            <button class="form-control" type="submit" class="btn btn-sm btn-success">Submit</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>                
+            </div>   
+            
+            <div class="row">
+                <div class="d-flex justify-content-center p-3">
+                    
+                        <img style="width:300px;" />
+                    
+                </div>                    
+            </div>
+            
         </div>
     </div>
 </div>
