@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UploadImageComponent implements OnInit {
 
-  imageUrl: string = "/assets/img/default";
+  imageUrl: string = "/assets/img/default-image.png";
   constructor() {}
 
   ngOnInit(): void {}
